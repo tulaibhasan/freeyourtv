@@ -69,7 +69,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .dots{position:absolute;pointer-events:none;background-image:radial-gradient(currentColor 1px,transparent 1.2px);background-size:14px 14px;opacity:.12}
 .hero .dots{right:0;top:0;width:44%;height:60%;color:#ededea;-webkit-mask-image:linear-gradient(225deg,#000,transparent 70%);mask-image:linear-gradient(225deg,#000,transparent 70%)}
 .hero .wrap{position:relative}
-.hero h1{font-size:clamp(3.2rem,11vw,9.4rem);margin-top:26px}
+.hero h1{font-size:clamp(3rem,8.6vw,8.2rem);margin-top:26px}
 .hero-row{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-top:36px}
 .hero .sub{color:#b8b8b3}
 .ctas{display:flex;gap:12px;flex-wrap:wrap}
@@ -110,7 +110,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 /* stats */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
 .stat{padding:28px 24px 0 0;display:grid;gap:8px;min-width:0}
-.stat b{font-stretch:125%;font-weight:700;text-transform:uppercase;font-size:clamp(1.7rem,3.2vw,2.5rem);letter-spacing:-.02em;line-height:1}
+.stat b{font-stretch:125%;font-weight:700;text-transform:uppercase;font-size:clamp(1.4rem,2.4vw,2rem);letter-spacing:-.02em;line-height:1;white-space:nowrap}
 .stat span{color:var(--muted);font-size:.92rem}
 
 /* compare */
@@ -291,7 +291,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .lk-calm{background:linear-gradient(#1b2a55,#6a5a8c 55%,#e59a6b 85%,#f3c27e)}
 .lk-calm .hill{left:-5%;right:-5%;bottom:0;height:34%;background:#251f3b;border-radius:50% 50% 0 0/40% 40% 0 0}
 .lk-calm .t{top:6cqw;left:6cqw;font-size:4cqw;font-weight:600}
-.lk-calm .g{top:30%;width:100%;text-align:center;font-size:6cqw}
+.lk-calm .lg{top:30%;width:100%;text-align:center;font-size:6cqw}
 .lk-calm .d{bottom:8%;width:100%;display:flex;justify-content:center;align-items:center;gap:3cqw}
 /* 2 taskbar */
 .lk-task{background:radial-gradient(60% 80% at 60% 55%,#9cc7ff 0,#3a7bd5 35%,#123a7a 70%,#0b1d42)}
@@ -309,7 +309,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .lk-dock .menu{left:0;right:0;top:0;height:5cqw;background:rgba(255,255,255,.18);display:flex;justify-content:space-between;align-items:center;padding:0 3cqw;font-size:2.1cqw}
 .lk-dock .menu i{display:inline-block;width:2cqw;height:2cqw;border-radius:50%;background:#fff;margin-right:2cqw;vertical-align:middle}
 .lk-dock .big{top:22%;width:100%;text-align:center;font-size:11cqw;font-weight:300;letter-spacing:-.02em}
-.lk-dock .sub{top:46%;width:100%;text-align:center;font-size:2.6cqw;opacity:.9}
+.lk-dock .lsub{top:46%;width:100%;text-align:center;font-size:2.6cqw;opacity:.9}
 .lk-dock .dk{bottom:3cqw;left:50%;transform:translateX(-50%);padding:1.4cqw 2cqw;border-radius:3cqw;background:rgba(255,255,255,.25);border:1px solid rgba(255,255,255,.35);display:flex;align-items:flex-end;gap:1.6cqw}
 .lk-dock .dk .sq{width:6cqw;height:6cqw}
 .lk-dock .dk .sq.zoom{width:8.5cqw;height:8.5cqw}
@@ -328,14 +328,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 /* 5 minimal */
 .lk-min{background:#0a0a0b}
 .lk-min .big{top:22%;width:100%;text-align:center;font-size:17cqw;font-weight:200;letter-spacing:-.03em;line-height:1}
-.lk-min .sub{top:54%;width:100%;text-align:center;font-size:2.4cqw;letter-spacing:.3em;text-transform:uppercase;color:#8b8b93}
+.lk-min .lsub{top:54%;width:100%;text-align:center;font-size:2.4cqw;letter-spacing:.3em;text-transform:uppercase;color:#8b8b93}
 .lk-min .apps{bottom:9%;width:100%;display:flex;justify-content:center;gap:5cqw;font-size:2.4cqw;color:#c9c9d1}
 .lk-min .apps span:first-child{color:#fff;border-bottom:.3cqw solid #fff;padding-bottom:.6cqw}
 /* 6 cinema */
 .lk-cine{background:#0b0b10}
-.lk-cine .hero{left:0;right:0;top:0;height:64%;background:linear-gradient(90deg,#0b0b10 8%,rgba(11,11,16,.2) 60%),linear-gradient(135deg,#7b1e1e,#d9822b 60%,#2b1b3a)}
+.lk-cine .lhero{left:0;right:0;top:0;height:64%;background:linear-gradient(90deg,#0b0b10 8%,rgba(11,11,16,.2) 60%),linear-gradient(135deg,#7b1e1e,#d9822b 60%,#2b1b3a)}
 .lk-cine .ttl{left:5cqw;top:14cqw;font-family:var(--display);font-size:7cqw;font-weight:700;line-height:1}
-.lk-cine .meta{left:5cqw;top:23cqw;font-size:2.2cqw;color:#c9c9d1}
+.lk-cine .lmeta{left:5cqw;top:23cqw;font-size:2.2cqw;color:#c9c9d1}
 .lk-cine .play{left:5cqw;top:28cqw;background:#fff;color:#000;font-size:2.2cqw;font-weight:700;padding:1cqw 3cqw;border-radius:5cqw}
 .lk-cine .row{left:5cqw;right:-6cqw;bottom:4cqw;display:flex;gap:2cqw}
 .lk-cine .row i{flex:none;width:20cqw;height:11.5cqw;border-radius:1.4cqw}
@@ -354,8 +354,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .lk-faith .dome{bottom:21%;left:50%;transform:translateX(-50%);width:22cqw;height:11cqw;background:#0a201f;border-radius:11cqw 11cqw 0 0}
 .lk-faith .min1,.lk-faith .min2{bottom:21%;width:2.4cqw;height:22cqw;background:#0a201f;border-radius:1.2cqw 1.2cqw 0 0}
 .lk-faith .min1{left:calc(50% - 17cqw)} .lk-faith .min2{left:calc(50% + 14.6cqw)}
-.lk-faith .head{left:6cqw;top:6cqw;font-size:2.4cqw;color:#cfe3dc}
-.lk-faith .head b{display:block;font-size:6cqw;font-weight:500;color:#fff}
+.lk-faith .lhead{left:6cqw;top:6cqw;font-size:2.4cqw;color:#cfe3dc}
+.lk-faith .lhead b{display:block;font-size:6cqw;font-weight:500;color:#fff}
 .lk-faith .times{left:4cqw;right:4cqw;bottom:4cqw;display:grid;grid-template-columns:repeat(5,1fr);gap:1.4cqw;text-align:center;font-size:2.1cqw;color:#cfe3dc}
 .lk-faith .times div{padding:1.2cqw 0;border-radius:1.4cqw;background:rgba(255,255,255,.06)}
 .lk-faith .times b{display:block;font-size:2.8cqw;color:#fff;font-weight:600}
@@ -558,7 +558,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <div class="bezel"><div class="pane" id="pane-0" role="tabpanel" aria-labelledby="tab-0"><div class="lk lk-calm" aria-hidden="true">
           <div class="abs hill"></div>
           <div class="abs t">5:02</div>
-          <div class="abs g">Good evening</div>
+          <div class="abs lg">Good evening</div>
           <div class="abs d"><i class="ico" style="width:8cqw;height:8cqw;background:#e2b05a"></i><i class="ico" style="width:11cqw;height:11cqw;background:#fff"></i><i class="ico" style="width:8cqw;height:8cqw;background:#111"></i></div>
         </div></div><div class="pane" id="pane-1" role="tabpanel" aria-labelledby="tab-1" hidden><div class="lk lk-task" aria-hidden="true">
           <div class="abs swirl"></div>
@@ -572,7 +572,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <div class="abs wave"></div>
           <div class="abs menu"><span><i></i>Home</span><span>Fri 20 Nov · 5:02 PM</span></div>
           <div class="abs big">5:02</div>
-          <div class="abs sub">Friday, 20 November</div>
+          <div class="abs lsub">Friday, 20 November</div>
           <div class="abs dk"><i class="sq" style="background:#fff"></i><i class="sq zoom" style="background:#e50914"></i><i class="sq" style="background:#22c55e"></i><i class="sq" style="background:#3b82f6"></i><i class="sq" style="background:#f59e0b"></i></div>
         </div></div><div class="pane" id="pane-3" role="tabpanel" aria-labelledby="tab-3" hidden><div class="lk lk-glass" aria-hidden="true">
           <div class="abs blob" style="left:-5cqw;top:-6cqw;width:45cqw;height:45cqw;background:#ec4899"></div>
@@ -585,12 +585,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           </div>
         </div></div><div class="pane" id="pane-4" role="tabpanel" aria-labelledby="tab-4" hidden><div class="lk lk-min" aria-hidden="true">
           <div class="abs big">5:02</div>
-          <div class="abs sub">Friday · 21°</div>
+          <div class="abs lsub">Friday · 21°</div>
           <div class="abs apps"><span>YouTube</span><span>Netflix</span><span>Games</span><span>Music</span></div>
         </div></div><div class="pane" id="pane-5" role="tabpanel" aria-labelledby="tab-5" hidden><div class="lk lk-cine" aria-hidden="true">
-          <div class="abs hero"></div>
+          <div class="abs lhero"></div>
           <div class="abs ttl">Movie night</div>
-          <div class="abs meta">Pick up where you left off</div>
+          <div class="abs lmeta">Pick up where you left off</div>
           <div class="abs play">▶ Continue</div>
           <div class="abs row"><i style="background:linear-gradient(135deg,#1e3a8a,#60a5fa)"></i><i style="background:linear-gradient(135deg,#7c2d12,#fb923c)"></i><i style="background:linear-gradient(135deg,#14532d,#4ade80)"></i><i style="background:linear-gradient(135deg,#581c87,#e879f9)"></i></div>
         </div></div><div class="pane" id="pane-6" role="tabpanel" aria-labelledby="tab-6" hidden><div class="lk lk-kids" aria-hidden="true">
@@ -602,7 +602,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <div class="abs moon"></div>
           <div class="abs min1"></div><div class="abs min2"></div><div class="abs dome"></div>
           <div class="abs sky"></div>
-          <div class="abs head"><b>Maghrib in 12 min</b>Friday · 10 Jumada al-Akhirah 1448</div>
+          <div class="abs lhead"><b>Maghrib in 12 min</b>Friday · 10 Jumada al-Akhirah 1448</div>
           <div class="abs times"><div>Fajr<b>5:16</b></div><div>Zuhr<b>11:58</b></div><div>Asr<b>3:18</b></div><div class="now">Maghrib<b>5:14</b></div><div>Isha<b>6:37</b></div></div>
         </div></div></div>
         <p class="looks-desc sub" id="looks-desc" hidden style="margin-top:18px"></p>
