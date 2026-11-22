@@ -251,6 +251,13 @@ footer{padding-block:28px;color:var(--muted);font-size:.85rem;text-align:center}
 .looks-note{margin-top:28px;color:var(--muted);max-width:65ch}
 @media (max-width:560px){.looks{grid-template-columns:1fr}}
 
+.wa-btn{margin-top:30px;display:inline-flex;align-items:center;gap:12px;background:#25d366;color:#fff;text-decoration:none;font-weight:700;font-size:1.1rem;padding:14px 26px 14px 18px;border-radius:999px;box-shadow:0 10px 24px -10px rgba(37,211,102,.7)}
+.wa-btn svg{width:34px;height:34px}
+.wa-btn:hover,.wa-btn:focus-visible{background:#1ebe5a;outline:none}
+.wa-float{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:20;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.45)}
+.wa-float svg{width:36px;height:36px}
+.wa-float:hover,.wa-float:focus-visible{background:#1ebe5a;outline:2px solid #fff;outline-offset:2px}
+
 @media (max-width:860px){
   .hero-grid,.games-grid,.ba{grid-template-columns:1fr}
   .feats,.pk,.tvs,.addons{grid-template-columns:1fr 1fr}
@@ -661,11 +668,12 @@ footer{padding-block:28px;color:var(--muted);font-size:.85rem;text-align:center}
 <section id="contact" class="contact">
   <div class="wrap">
     <h2>Book a visit</h2>
-    <p class="lede">Send a photo of your TV's model sticker and your area. We'll tell you which package fits.</p>
-    <div class="contact-box"><span>WhatsApp</span><b>0301 3666088</b></div>
+    <p class="lede">Tap below to message us. Send a photo of your TV's model sticker and your area. We'll tell you which package fits.</p>
+    <a class="wa-btn" href="https://wa.me/923013666088?text=Hi%2C%20I%27d%20like%20to%20book%20a%20TV%20makeover." target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 3C8.8 3 3 8.6 3 15.6c0 2.5.8 4.9 2.1 6.9L3.5 29l6.8-1.8c1.8 1 3.8 1.5 5.7 1.5 7.2 0 13-5.6 13-12.6S23.2 3 16 3z"/><g transform="translate(9.2 8.6) scale(.58)"><path fill="#25d366" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></g></svg>Chat on WhatsApp</a>
   </div>
 </section>
 <footer><div class="wrap">Free Your TV · Lahore · Home screen built on Free My TV, open-source software under the MIT licence.</div></footer>
 
+<a class="wa-float" href="https://wa.me/923013666088?text=Hi%2C%20I%27d%20like%20to%20book%20a%20TV%20makeover." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 3C8.8 3 3 8.6 3 15.6c0 2.5.8 4.9 2.1 6.9L3.5 29l6.8-1.8c1.8 1 3.8 1.5 5.7 1.5 7.2 0 13-5.6 13-12.6S23.2 3 16 3z"/><g transform="translate(9.2 8.6) scale(.58)"><path fill="#25d366" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></g></svg></a>
 </body>
 </html>
